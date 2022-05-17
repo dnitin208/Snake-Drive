@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    background-color: red;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background-color: rgb(212, 212, 168);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black ;
+    /* to form a grid of 18 rows and 18 columns  */
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+
+
+/* for snake */
+
+/* snake head */
+.head{
+    background-color: red;
+    border: 2px solid purple;
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+
+}
+
+/* snakes food */
+.food{
+    background-color: yellow;
+    border: .25vmin solid white;
+    border-radius: 7px;
+}
+
+#scorebox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
